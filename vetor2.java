@@ -12,7 +12,7 @@ import java.util.Scanner;
                 valor[i] = ler.nextInt();
             }
 
-            System.out.print("primeiro elemento: " + valor[0]);
+            System.out.println("primeiro elemento: " + valor[0]);
             System.out.print("ultimo elemento: " + valor[valor.length - 1]);
         }
     }

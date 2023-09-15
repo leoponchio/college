@@ -12,7 +12,7 @@ import java.util.Scanner;
             }
 
             for (int i = 0; i < notas.length; i++) {
-                System.out.print("notas: " + notas[i]);
+                System.out.println("nota: " + notas[i]);
             }
         }
     }
