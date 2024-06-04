@@ -1,17 +1,23 @@
-public class contagem {
-    public static void main(String[] args) {
-        int[] vetor = new int[20];
-        int index = 0;
-        
-        for (int i = 1; i <= 10; i++) {
-            vetor[index] = i * i;
-            index++;
-            vetor[index] = 0;
-            index++;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+    public class contagem {
+        public static void main(String[] args) {
+            Scanner ler = new Scanner(System.in);
+            int valor;
+
+            System.out.print("informe um valor inteiro: ");
+            valor = ler.nextInt();
+
+            contRec(valor);
         }
-        
-        for (int soma : vetor) {
-            System.out.print(soma + " ");
+
+        public static void contRec(int valor){
+            if (valor > 0 ) {
+                contRec(valor - 1);
+                System.out.print(valor + " ");
+            } else if (valor < 0){
+                System.out.println("deve ser um valor inteiro");
+            }
         }
-    }
 }
